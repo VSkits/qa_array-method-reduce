@@ -31,7 +31,7 @@ describe('reduce', () => {
     expect(callback).toHaveBeenCalledTimes(nums.length);
   });
 
-  it('should work witout initial value', () => {
+  it('should work without initial value', () => {
     const result = nums.reduce2(callback);
 
     expect(callback).toHaveBeenCalled();
@@ -39,7 +39,7 @@ describe('reduce', () => {
     expect(result).toBe(10);
   });
 
-  it('should work witout initial array', () => {
+  it('should work without initial array', () => {
     const init = 10;
     const result = [].reduce2(callback, init);
 
